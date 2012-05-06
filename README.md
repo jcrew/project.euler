@@ -1,6 +1,7 @@
 project.euler
 =============
-Personnel project.euler in python, guess this is a good way to get used to std python
+Personnel project.euler in python. I believe eula project gives me some of 
+motivation for learning programming languages.
 
 One
 ---
@@ -18,3 +19,10 @@ By starting with 1 and 2, the first 10 terms will be:
 
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 Find the sum of the even-valued terms.
+
+
+Three
+-----
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number

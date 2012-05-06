@@ -42,6 +42,23 @@ class EULA():
         return self.answer['two']
 
 
+    def three(self, x):
+        '''The prime factors of 13195 are 5, 7, 13 and 29.
+        What is the largest prime factor of the number 600851475143 ?'''
+        factors = []
+        a = 2
+
+        while True:
+            if x % a is 0:
+                factors.append(a)
+                x = x / a
+
+            if x is 1:
+                return max(factors)
+
+            a += 1
+
+
 class test_EULA(unittest.TestCase):
     def setUp(self):
         self.eula = EULA()
@@ -51,6 +68,9 @@ class test_EULA(unittest.TestCase):
 
     def test_two(self):
         self.assertEqual(self.eula.two(80), 44)
+
+    def test_three(self):
+        self.assertEqual(self.eula.three(13195), 29)
 
     if __name__ == '__main__':
         unittest.main()
