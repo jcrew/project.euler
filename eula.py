@@ -45,16 +45,16 @@ class EULA():
     def three(self, x):
         '''The prime factors of 13195 are 5, 7, 13 and 29.
         What is the largest prime factor of the number 600851475143 ?'''
-        factors = []
+        self.answer['three'] = 0
         a = 2
 
         while True:
             if x % a is 0:
-                factors.append(a)
-                x = x / a
+                self.answer['three'] = a
+                x /= a
 
             if x is 1:
-                return max(factors)
+                return self.answer['three']
 
             a += 1
 
